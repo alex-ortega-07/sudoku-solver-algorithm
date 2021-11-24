@@ -20,7 +20,4 @@ class RenderWindow{
     private:
         SDL_Window *window = nullptr;
         SDL_Renderer *renderer = nullptr;
-
-        int text_width;
-        int text_height;
 };
