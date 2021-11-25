@@ -52,18 +52,6 @@ void find_empty(const short sudoku[9][9], int &row_o, int &col_o){
     return;
 }
 
-void shuffle(short array[], int len){
-    int temp, rand_index;
-
-    for(int i = 0; i < len; ++i){
-        rand_index = rand() % len;
-
-        temp = array[i];
-        array[i] = array[rand_index];
-        array[rand_index] = temp;
-    }
-}
-
 void drawBoard(SDL_Renderer *renderer, int screen_width, int screen_height, int margin_bottom, int box_space){
     int board_width = box_space * 9;
     int left_x = (screen_width - board_width) / 2;
