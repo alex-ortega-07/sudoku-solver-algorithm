@@ -165,7 +165,7 @@ int main(int argc, char *args[]){
         return -1;
     }
 
-    SDL_Renderer *renderer = SDL_CreateRenderer(win, -1, SDL_RENDERER_ACCELERATED);
+    SDL_Renderer *renderer = SDL_CreateRenderer(win, -1, SDL_RENDERER_SOFTWARE);
 
     SDL_Event event;
 
