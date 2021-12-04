@@ -118,9 +118,6 @@ void display_sudoku(const short sudoku[9][9], int start_point_x, int start_point
 
 
 int main(int argc, char *args[]){
-    // Seeds the srand function with the number of seconds of the machine
-    srand(time(0));
-
     const int WIDTH = 440;
     const int HEIGHT = 500;
 
